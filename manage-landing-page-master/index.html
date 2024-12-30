@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+
+</head>
+<body>
+  <div class="main ">
+    <img src="./images/bg-tablet-pattern.svg" alt="img">
+    <div class="navbar">
+      <img class="logo" alt="Logo" src="./images/logo.svg" />
+      <ul class="ullink">
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <button class="button1">Get Started</button>
+    </div>
+    <div class="mainsub">
+      <div class="subleft">
+        <h1 class="banner">Bring everyone together to build better products.</h1>
+        <p class="paragraph1">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <button class="button2">Get Started</button>
+      </div>
+      <div class="subright">
+        <img class="imgintro" src="./images/illustration-intro.svg" alt="img" />
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <img class="bgimg2" src="./images/bg-tablet-pattern.svg" alt="img">
+    <div class="infosub">
+      <div class="infoleft">
+        <h1 class="infobanner">What’s different about Manage?</h1>
+        <p class="infoparagraph">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. </p>
+      </div>
+      <div class="inforight">
+        <div class="inforight1">
+          <div class="infolabel1">
+            <h4>01</h4>
+          </div>
+          <div class="infoh1">
+            <h4>Track company-wide progress</h4>
+        
+          
+            <p class="infop1">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+          </div>
+        </div>
+        <div class="inforight1">
+          <div class="infolabel1">
+            <h4>02</h4>
+          </div>
+          <div class="infoh1">
+            <h4>Advanced built-in reports</h4>
+          
+            <p class="infop1">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+            </p>
+          </div>
+        </div>
+        <div class="inforight1">
+          <div class="infolabel1">
+            <h4>03</h4>
+          </div>
+          <div class="infoh1">
+            <h4>Everything you need in one place</h4>
+          
+            <p class="infop1">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback">
+      <h1 class="feedbackbanner">What they’ve said</h1>
+      <div class="feedbacksub">
+        <div class="feedback1">
+          <img class="imganisha" src="./images/avatar-anisha.png" alt="img"/>
+          <h3 class="nmanisha">Anisha Li</h3>
+          <p class="panisha"> “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+          </p>
+        </div>
+        <div class="feedback2">
+          <img class="imgali" src="./images/avatar-ali.png" alt="img"/>
+          <h3 class="nmali">Ali Bravo</h3>
+          <p class="pali"> “We have been able to cancel so many other subscriptions since using  Manage. There is no more cross-channel confusion and everyone is much more focused.”
+          </p>
+        </div>
+        <div class="feedback3">
+          <img class="imgrichard" src="./images/avatar-richard.png" alt="img"/>
+          <h3 class="nmrichard">Richard Watts</h3>
+          <p class="prichard">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+        </div>
+      </div>
+      <button class="button3">Get Started</button>
+    </div>
+  </div>
+  <div class="textmain">
+    <img class="bgimg3" src="./images/bg-tablet-pattern.svg" alt="bgimg">
+    <div class="text">
+      <h2 class="textbanner">Simplify how your team works today.</h2>
+    </div>
+    <div class="textbutton">
+      <button class="textbutton1">Get Started</button>
+    </div>
+  </div> 
+  <div class="footer">
+    <div class="foote1">
+      <div class="footerimg">
+        <img class="footerlogo" src="./images/logo.svg" alt="logoimg"/>
+        <div class="imgicon">
+        <img alt="icon" src="./images/icon-facebook.svg" />
+          <img alt="icon" src="./images/icon-youtube.svg" />
+          <img alt="icon" src="./images/icon-twitter.svg" />
+          <img alt="icon" src="./images/icon-pinterest.svg" />
+          <img alt="icon" src="./images/icon-instagram.svg" />
+          </div>
+      </div>  
+    </div>
+    <div class="footerlink1">
+      <ul><li><a href="#">Home</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About Us</a></li> </ul>
+      </div>
+      <div class="footerlink2">
+      <ul><li><a href="#">Careers</a></li>
+      <li><a href="#">Community</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    </div>
+    <div class="footer-input">
+      <input class="input-box" type="text" placeholder="Updates in your inbox…" />
+      <button class="footer-button">Go</button>
+      <p class="copyright">Copyright 2020. All Rights Reserved</p>  
+    </div>  
+  </div>
+
+
+  
+ 
+</body>
+</html>
