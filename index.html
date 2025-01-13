@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TO-DO List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="todo-container">
+
+    <div id="header">
+      <h1>To Do List</h1>
+    </div>
+    <hr>
+    <form>
+      <div id="todo-form">
+        <div id="todo-form1">
+          <h4 id="label">Input Task</h4>
+          <input maxlength="40" type="text" class="input-item" name="input_box" id="input-box" placeholder="Add Task" />
+
+          <h4 id="label">Category</h4>
+
+          <select name="category" id="category">
+            <option value="" selected>Select Category</option>
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Others">Others</option>
+          </select>
+          <br>
+
+        </div>
+        <div id="todo-form2">
+          <h4 id="label">Description</h4>
+          <input maxlength="40" id="input-description" type="text" class="input-item" name="input_box" id="input-box"
+            placeholder="Description" />
+          <h4 id="label">Due-Date</h4>
+          <input id="due-date" type="date">
+        </div>
+        <!-- <button id="input-button" >Add</button> -->
+      </div>
+      <button id="input-button">Add</button>
+    </form>
+    <hr>
+
+
+    <h2>Task List</h2>
+    <ul id="list-container"></ul>
+
+    <hr>
+
+
+    <div class="counter-container">
+      <div id="task-counters">
+        Completed: <span id="completed-counter">0</span> | Uncompleted:
+        <span id="uncompleted-counter">0</span>
+
+      </div>
+      <div id="clear-button">
+        <button id="clear-button1">Clear All</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
