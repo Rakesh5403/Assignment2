@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">Personal Expenses Tracker</nav> 
+      <header>
+        <div class="left-main">
+        <div class="left-container">
+            <div>
+              <h5>Total Balance</h5>
+              <span id="balance">$0.00</span>
+            </div>
+            <div class="income-expense">
+              
+              <h5>Income</h5>
+              
+              <span id="income">$0.00</span>
+            <!-- </div>
+            <div> -->
+              <h5>Expense</h5>
+              
+              <span id="expense">$0.00</span>
+            </div>
+        </div>
+        <div class="second-container">
+          <div class="searchbox">
+         
+          <input class="search-box" type="text" name="name" placeholder="Search-Box" />
+          </div>
+          <div class="sorting">
+          
+          <select class="sort" name="sort" id="sort">
+            <option value="Sort" selected>Sort</option>
+            <option value="date">Date</option>
+           
+          </select>
+          <button class="clear-all" id="clear-all">Clear All</button>
+          </div>
+        </div>
+        </div>
+        <div class="right-container">
+          <form id="transactionForm">
+            <div>
+              <label for="type">
+                <input type="checkbox" name="type" id="type" />
+                <div class="option">
+                  <span>Expense</span>
+                  <span>Income</span>
+                </div>
+              </label>
+            </div>
+            <div class="form-container">
+              <div>
+              <label class="label-form" for="name">Title</label>
+              <input type="text" name="name" maxlength="40" required />
+              <label class="label-form" for="date">category</label>
+              <select name="category" id="category">
+                <option value="Expense">Expense</option>
+                <option value="Personal">Personal</option>
+                <option value="Work">Buisness</option>
+                <option value="Shopping">Salary</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="form2-container">
+              <label class="label-form" for="amount">Amount</label>
+              <input
+                type="number"
+                name="amount"
+                value="0"
+                min="0.01"
+                step="0.01"
+                required
+              />
+              <label class="label-form" for="date">Date</label>
+              <input type="date" name="date" required />
+            </div>
+            </div>
+           
+            <button type="submit">Submit</button>
+          </form>
+        </div>    
+      </header>
+
+      <section>
+        <div class="list">
+        <h3>Transactions</h3>
+        <ul id="transactionList"></ul>
+        <div id="status"></div>
+        </div>
+        <!-- <div class="chart">
+          <div class="pie-chart">
+
+          </div>
+          <div class="bar-chart">
+
+          </div>
+
+        </div> -->
+
+        <div class="chart">
+          <div class="pie-chart" >
+            <canvas id="pieChart"></canvas>
+          </div>
+          <div class="bar-chart" >
+            <canvas id="barChart"></canvas>
+          </div>
+        </div>
+        
+      </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
